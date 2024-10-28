@@ -38,10 +38,14 @@ d2ptGrids = content["configs"]
 
 #read the current hero grid folder
 print("Reading your current hero grid")
-heroGridData = ast.literal_eval(open(gridPath, "r").read())
+try:
+    heroGridData = ast.literal_eval(open(gridPath, "r").read())
+except FileNotFoundError:
+    print(f"Could not find hero_grid_config.json in {settings["hero_grid_folder"]}.\nEnsure that the path in config.config is correct")
+    quit()
 heroGrids = heroGridData["configs"].copy()
 
-#go through the grid and remove d2pt grids
+#go through the grid and remove existing d2pt grids
 for grid in heroGrids:
     if "Dota2ProTracker" in grid["config_name"]: 
         heroGridData["configs"].remove(grid)
