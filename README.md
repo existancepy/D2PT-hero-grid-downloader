@@ -13,6 +13,6 @@ A simple python script to download [D2PT's meta hero grids](https://dota2protrac
 Download the latest zip in the [releases](https://github.com/existancepy/D2PT-hero-grid-downloader/releases) section
 
 ### Edit Config
-Open config.config and set the path of your hero grid folder
+Open **config.config** and set the path of your hero grid folder
 ### Install and run program
-Open start.bat. It will download the neccessary dependencies and run the program
+Open **start.bat**. It will download the neccessary dependencies and run the program
