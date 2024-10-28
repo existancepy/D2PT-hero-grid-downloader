@@ -1,4 +1,6 @@
 # D2PT-hero-grid-downloader
-A simple python script to download D2PT's meta hero grids and merge them with your existing grids
+A simple python script to download [D2PT's meta hero grids](https://dota2protracker.com/meta-hero-grids) and merge them with your existing grids
 
 ![Hero Grid Example](https://github.com/existancepy/D2PT-hero-grid-downloader/blob/main/assets/grid)
+
+##
